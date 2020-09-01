@@ -1,6 +1,6 @@
 package com.springframework.sample.sfgpetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity{
 
 
     private String firstName;
