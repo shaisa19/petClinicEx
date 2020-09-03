@@ -1,12 +1,15 @@
 package com.springframework.sample.sfgpetclinic.services.map;
 
 import com.springframework.sample.sfgpetclinic.model.Owner;
-import com.springframework.sample.sfgpetclinic.services.CrudService;
+import com.springframework.sample.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>
-implements CrudService<Owner, Long> {
+implements OwnerService{
 
 
     @Override
@@ -35,4 +38,8 @@ implements CrudService<Owner, Long> {
     }
 
 
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
